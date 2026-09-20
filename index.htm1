@@ -1,86 +1,51 @@
-<section>
-  <h2>Project Overview</h2>
-  <p>
-    Silico Guard is a fire safety innovation project focused on silicone-based
-    fire blanket concepts designed to support fire response and personal protection.
-  </p>
+<div class="eyebrow">About the Author</div>
+
+  <h2>
+    Nora Alshalahi
+  </h2>
 
   <p>
-    The project includes two concepts: a silicone fire blanket and a
-    silicone fire blanket incorporating a cooling gel layer.
-  </p>
-</section>
-
-<section>
-  <h2>Project Concept</h2>
-  <p>
-    The project explores the use of silicone as a flexible, heat-resistant
-    and electrically insulating material within a fire safety application.
+    Occupational Health & Safety professional with practical experience
+    in workplace safety inspections, hazard identification, emergency
+    planning and safety documentation.
   </p>
 
-  <p>
-    The second concept incorporates a cooling layer as part of the design
-    approach to reduce the sensation of heat during use.
-  </p>
-</section>
-
-<section>
-  <h2>Design & Development</h2>
-  <p>
-    The project concepts were developed using 3D modeling and physical
-    prototyping, followed by a practical demonstration.
+  <p style="margin-top:18px;">
+    My focus is on preventive safety, practical hazard awareness and
+    developing clear safety solutions that support safer workplaces.
   </p>
 
-  <a class="button" href="README.md">View Project Details</a>
-  <a class="button" href="سيلكو جارد.pdf">Project PDF</a>
-</section>
+</div>
 
-<section>
-  <h2>Project Documentation</h2>
 
-  <a class="button" href="سيلكو جارد.pdf">
-    Silico Guard Project
-  </a>
+<div class="about-card">
 
-  <a class="button" href="صور محررة.pdf">
-    Project Images
-  </a>
-
-  <a class="button" href="ملاحظة جديدة 2.pdf">
-    Additional Documentation
-  </a>
-</section>
-
-<section>
-  <h2>Practical Demonstration</h2>
+  <h3>Professional Profile</h3>
 
   <p>
-    A practical fire demonstration was conducted with safety precautions
-    in place, including having a fire extinguisher available as a backup
-    emergency measure.
+    Diploma in Occupational Health & Safety with professional training
+    and certifications in occupational safety and emergency response.
   </p>
 
-  <a class="button" href="٢محاكاة.mov">
-    Watch / Open Demonstration Video
-  </a>
-</section>
 
-<section>
-  <h2>Recognition</h2>
+  <div class="credentials">
 
-  <p>
-    Silico Guard received an Outstanding Project Award at the
-    Qasim Region Technical and Vocational Training Excellence Award (2025).
-  </p>
-</section>
+    <span class="credential">OSHA 30H</span>
 
-<section>
-  <h2>About the Author</h2>
+    <span class="credential">IOSH Managing Safely</span>
 
-  <p>
-    Nora Abdulali Alshalahi is an Occupational Health & Safety professional
-    holding a Diploma in Occupational Health and Safety, with professional
-    training and certifications in workplace safety, hazard identification,
-    safety inspections, risk management and safety documentation.
-  </p>
-</section>
+    <span class="credential">CIEH Level 3</span>
+
+    <span class="credential">HAZWOPER</span>
+
+    <span class="credential">First Aid</span>
+
+    <span class="credential">Risk Management 30H</span>
+
+    <span class="credential">Safety Cadres</span>
+
+    <span class="credential">SCE Technical Membership</span>
+
+  </div>
+
+</div>
