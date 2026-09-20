@@ -1,964 +1,1031 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Silico Guard | Fire Safety Innovation</title>
 
 <style>
-:root{
-  --dark:#172026;
-  --dark2:#202c33;
-  --orange:#e87522;
-  --orange2:#f39a4a;
-  --light:#f5f7f8;
-  --white:#ffffff;
-  --text:#263238;
-  --muted:#69757c;
-  --line:#e3e8eb;
-}
 
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
-
-html{
-  scroll-behavior:smooth;
-}
+*{box-sizing:border-box;margin:0;padding:0}
 
 body{
-  font-family:Arial, Helvetica, sans-serif;
-  background:var(--light);
-  color:var(--text);
-  line-height:1.7;
-}
 
-a{
-  text-decoration:none;
-  color:inherit;
-}
+font-family:Arial,sans-serif;
 
-/* NAVIGATION */
+background:#f4f6f7;
+
+color:#263238;
+
+line-height:1.6
+
+}
 
 nav{
-  position:sticky;
-  top:0;
-  z-index:100;
-  background:rgba(23,32,38,.96);
-  backdrop-filter:blur(10px);
-  padding:18px 7%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
+
+background:#172026;
+
+padding:20px 7%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+color:white
+
 }
 
 .logo{
-  color:white;
-  font-size:20px;
-  font-weight:800;
-  letter-spacing:.5px;
+
+font-size:20px;
+
+font-weight:bold
+
 }
 
 .logo span{
-  color:var(--orange2);
+
+color:#e87522
+
 }
 
-.nav-links{
-  display:flex;
-  gap:28px;
-  color:#dce3e6;
-  font-size:14px;
-}
+nav a{
 
-.nav-links a:hover{
-  color:var(--orange2);
-}
+color:#ddd;
 
-/* HERO */
+text-decoration:none;
+
+margin-left:25px;
+
+font-size:14px
+
+}
 
 .hero{
-  min-height:650px;
-  background:
-    linear-gradient(115deg,rgba(23,32,38,.98),rgba(23,32,38,.86)),
-    radial-gradient(circle at 80% 30%,#e87522 0%,transparent 35%);
-  color:white;
-  display:flex;
-  align-items:center;
-  padding:80px 7%;
-  position:relative;
-  overflow:hidden;
-}
 
-.hero::after{
-  content:"";
-  position:absolute;
-  width:500px;
-  height:500px;
-  border:1px solid rgba(232,117,34,.25);
-  border-radius:50%;
-  right:-180px;
-  top:-100px;
+background:linear-gradient(120deg,#172026,#29363d);
+
+color:white;
+
+padding:110px 8%;
+
+min-height:560px;
+
+display:flex;
+
+align-items:center
+
 }
 
 .hero-content{
-  max-width:850px;
-  position:relative;
-  z-index:2;
+
+max-width:850px
+
 }
 
 .tag{
-  display:inline-block;
-  color:#ffb16d;
-  font-size:13px;
-  font-weight:bold;
-  letter-spacing:2px;
-  margin-bottom:20px;
+
+color:#f39a4a;
+
+font-size:13px;
+
+font-weight:bold;
+
+letter-spacing:2px;
+
+margin-bottom:20px
+
 }
 
-.hero h1{
-  font-size:clamp(55px,9vw,100px);
-  line-height:.95;
-  letter-spacing:-4px;
-  margin-bottom:25px;
+h1{
+
+font-size:80px;
+
+line-height:1;
+
+margin-bottom:25px
+
 }
 
-.hero h1 span{
-  color:var(--orange2);
+h1 span{
+
+color:#f39a4a
+
 }
 
-.hero-subtitle{
-  font-size:22px;
-  max-width:720px;
-  color:#d9e0e3;
-  margin-bottom:35px;
-}
+.hero p{
 
-.hero-buttons{
-  display:flex;
-  flex-wrap:wrap;
-  gap:15px;
+font-size:21px;
+
+color:#d9e0e3;
+
+max-width:700px;
+
+margin-bottom:35px
+
 }
 
 .btn{
-  padding:14px 24px;
-  border-radius:6px;
-  font-weight:bold;
-  font-size:14px;
-  transition:.25s;
-  display:inline-block;
+
+display:inline-block;
+
+padding:14px 23px;
+
+border-radius:6px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+margin-right:10px;
+
+margin-bottom:10px
+
 }
 
-.btn-primary{
-  background:var(--orange);
-  color:white;
+.primary{
+
+background:#e87522;
+
+color:white
+
 }
 
-.btn-primary:hover{
-  background:var(--orange2);
-  transform:translateY(-2px);
-}
+.secondary{
 
-.btn-outline{
-  border:1px solid #87939a;
-  color:white;
-}
+border:1px solid #89959b;
 
-.btn-outline:hover{
-  border-color:var(--orange2);
-  color:var(--orange2);
-}
+color:white
 
-/* STATS */
+}
 
 .stats{
-  width:86%;
-  margin:-55px auto 0;
-  position:relative;
-  z-index:5;
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  background:white;
-  box-shadow:0 15px 40px rgba(0,0,0,.09);
-  border-radius:10px;
-  overflow:hidden;
+
+width:86%;
+
+margin:-45px auto 0;
+
+position:relative;
+
+background:white;
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+box-shadow:0 15px 35px #00000012;
+
+border-radius:10px;
+
+overflow:hidden
+
 }
 
 .stat{
-  padding:30px;
-  text-align:center;
-  border-right:1px solid var(--line);
+
+padding:28px;
+
+text-align:center;
+
+border-right:1px solid #e5e8ea
+
 }
 
 .stat:last-child{
-  border-right:none;
+
+border:0
+
 }
 
 .stat strong{
-  display:block;
-  font-size:28px;
-  color:var(--dark);
-  margin-bottom:5px;
+
+display:block;
+
+font-size:28px;
+
+color:#172026
+
 }
 
 .stat span{
-  color:var(--muted);
-  font-size:13px;
-}
 
-/* GENERAL */
+font-size:13px;
+
+color:#69757c
+
+}
 
 section{
-  padding:100px 7%;
+
+padding:90px 8%
+
 }
 
-.section-header{
-  max-width:750px;
-  margin-bottom:55px;
+.title{
+
+max-width:700px;
+
+margin-bottom:45px
+
 }
 
-.eyebrow{
-  color:var(--orange);
-  font-size:12px;
-  font-weight:bold;
-  letter-spacing:2px;
-  text-transform:uppercase;
-  margin-bottom:12px;
+.label{
+
+color:#e87522;
+
+font-size:12px;
+
+font-weight:bold;
+
+letter-spacing:2px;
+
+margin-bottom:10px
+
 }
 
-.section-header h2{
-  font-size:42px;
-  line-height:1.15;
-  color:var(--dark);
-  margin-bottom:18px;
+.title h2{
+
+font-size:42px;
+
+color:#172026;
+
+margin-bottom:15px
+
 }
 
-.section-header p{
-  color:var(--muted);
+.title p{
+
+color:#69757c
+
 }
 
-/* PROJECT CARDS */
+.cards{
 
-.project-grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:25px;
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:25px
+
 }
 
-.project-card{
-  background:white;
-  border-radius:12px;
-  overflow:hidden;
-  border:1px solid var(--line);
-  transition:.3s;
+.card{
+
+background:white;
+
+padding:35px;
+
+border-radius:10px;
+
+border:1px solid #e1e6e8;
+
+border-top:6px solid #e87522;
+
+box-shadow:0 8px 25px #00000008
+
 }
 
-.project-card:hover{
-  transform:translateY(-5px);
-  box-shadow:0 18px 40px rgba(0,0,0,.08);
+.card h3{
+
+font-size:25px;
+
+margin:10px 0 15px;
+
+color:#172026
+
 }
 
-.card-top{
-  height:8px;
-  background:var(--orange);
-}
+.card p{
 
-.card-body{
-  padding:35px;
-}
+color:#69757c
 
-.number{
-  color:var(--orange);
-  font-size:12px;
-  font-weight:bold;
-  letter-spacing:2px;
 }
-
-.project-card h3{
-  font-size:25px;
-  margin:12px 0 15px;
-  color:var(--dark);
-}
-
-.project-card p{
-  color:var(--muted);
-  margin-bottom:20px;
-}
-
-/* DEVELOPMENT */
 
 .development{
-  background:white;
+
+background:white
+
 }
 
 .steps{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:25px;
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:22px
+
 }
 
 .step{
-  padding:35px;
-  background:var(--light);
-  border-left:4px solid var(--orange);
+
+background:#f4f6f7;
+
+padding:30px;
+
+border-left:4px solid #e87522
+
 }
 
 .step-number{
-  font-size:38px;
-  font-weight:800;
-  color:#d8dde0;
+
+font-size:35px;
+
+font-weight:bold;
+
+color:#d7dcdf
+
 }
 
 .step h3{
-  color:var(--dark);
-  margin:8px 0;
+
+margin:8px 0
+
 }
 
-/* EVIDENCE */
+.files{
 
-.evidence-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:22px;
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:22px
+
 }
 
-.evidence{
-  background:var(--dark);
-  color:white;
-  padding:32px;
-  border-radius:10px;
-  min-height:220px;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
+.file{
+
+background:#172026;
+
+color:white;
+
+padding:30px;
+
+border-radius:10px;
+
+text-decoration:none;
+
+min-height:190px
+
 }
 
-.evidence .icon{
-  font-size:32px;
+.file-icon{
+
+font-size:30px;
+
+margin-bottom:20px
+
 }
 
-.evidence h3{
-  margin:18px 0 8px;
+.file h3{
+
+margin-bottom:8px
+
 }
 
-.evidence p{
-  color:#bfc8cc;
-  font-size:14px;
+.file p{
+
+color:#bcc5c9;
+
+font-size:14px
+
 }
 
-.evidence-link{
-  color:#ffad68;
-  font-weight:bold;
-  font-size:13px;
-  margin-top:20px;
-}
+.file strong{
 
-/* SAFETY */
+display:block;
+
+color:#f39a4a;
+
+margin-top:20px;
+
+font-size:13px
+
+}
 
 .safety{
-  background:#fff7f0;
+
+background:#fff6ee
+
 }
 
 .safety-box{
-  background:white;
-  border:1px solid #f0d7c2;
-  border-left:5px solid var(--orange);
-  padding:35px;
-  border-radius:8px;
-  max-width:950px;
-}
 
-.safety-box h3{
-  color:var(--dark);
-  margin-bottom:12px;
-}
+background:white;
 
-/* AWARD */
+border-left:5px solid #e87522;
+
+padding:30px;
+
+max-width:950px;
+
+box-shadow:0 5px 20px #00000008
+
+}
 
 .award{
-  background:var(--dark);
-  color:white;
-  text-align:center;
+
+background:#172026;
+
+color:white;
+
+text-align:center
+
 }
 
-.award .section-header{
-  margin-left:auto;
-  margin-right:auto;
+.award h2{
+
+font-size:42px;
+
+margin-bottom:15px
+
 }
 
-.award .section-header h2{
-  color:white;
+.award p{
+
+color:#c5cdd1;
+
+max-width:650px;
+
+margin:auto
+
 }
 
-.award .section-header p{
-  color:#c7d0d4;
+.badge{
+
+display:inline-block;
+
+margin-top:30px;
+
+padding:15px 25px;
+
+border:1px solid #66747b;
+
+border-radius:7px;
+
+color:#f39a4a;
+
+font-weight:bold
+
 }
 
-.award-badge{
-  display:inline-block;
-  border:1px solid #59666d;
-  padding:18px 28px;
-  border-radius:8px;
-  color:#ffb16d;
-  font-weight:bold;
+.about{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:50px;
+
+align-items:center
+
 }
 
-/* ABOUT */
+.about-box{
 
-.about-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:60px;
-  align-items:center;
+background:#172026;
+
+color:white;
+
+padding:40px;
+
+border-radius:10px
+
 }
 
-.about-card{
-  background:var(--dark);
-  color:white;
-  padding:45px;
-  border-radius:12px;
+.about-box p{
+
+color:#c7d0d4
+
 }
 
-.about-card h3{
-  font-size:30px;
-  margin-bottom:15px;
+.tags{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:8px;
+
+margin-top:25px
+
 }
 
-.about-card p{
-  color:#c8d0d4;
-}
+.tags span{
 
-.credentials{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-  margin-top:25px;
-}
+background:#303d44;
 
-.credential{
-  background:#303d44;
-  padding:8px 12px;
-  border-radius:5px;
-  font-size:12px;
-  color:#e4eaed;
-}
+padding:7px 10px;
 
-/* FOOTER */
+border-radius:5px;
+
+font-size:12px
+
+}
 
 footer{
-  background:#10181d;
-  color:#9da8ad;
-  padding:35px 7%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:20px;
-  font-size:13px;
+
+background:#10181d;
+
+color:#9da8ad;
+
+padding:30px 8%;
+
+display:flex;
+
+justify-content:space-between
+
 }
 
 footer a{
-  color:#ffad68;
+
+color:#f39a4a;
+
+text-decoration:none
+
 }
 
-/* MOBILE */
+@media(max-width:800px){
 
-@media(max-width:850px){
+nav a{
 
-  .nav-links{
-    display:none;
-  }
+display:none
 
-  .hero{
-    min-height:600px;
-    padding:70px 7%;
-  }
-
-  .hero h1{
-    font-size:60px;
-    letter-spacing:-2px;
-  }
-
-  .hero-subtitle{
-    font-size:18px;
-  }
-
-  .stats{
-    width:90%;
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .stat{
-    border-bottom:1px solid var(--line);
-  }
-
-  .project-grid,
-  .steps,
-  .evidence-grid,
-  .about-grid{
-    grid-template-columns:1fr;
-  }
-
-  section{
-    padding:75px 7%;
-  }
-
-  .section-header h2{
-    font-size:34px;
-  }
-
-  footer{
-    flex-direction:column;
-    text-align:center;
-  }
 }
+
+.hero{
+
+padding:80px 7%
+
+}
+
+h1{
+
+font-size:58px
+
+}
+
+.stats{
+
+grid-template-columns:repeat(2,1fr)
+
+}
+
+.stat{
+
+border-bottom:1px solid #e5e8ea
+
+}
+
+.cards,
+
+.steps,
+
+.files,
+
+.about{
+
+grid-template-columns:1fr
+
+}
+
+section{
+
+padding:70px 7%
+
+}
+
+.title h2,
+
+.award h2{
+
+font-size:34px
+
+}
+
+footer{
+
+flex-direction:column;
+
+gap:10px
+
+}
+
+}
+
 </style>
+
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
-
 <nav>
-  <div class="logo">SILICO <span>GUARD</span></div>
 
-  <div class="nav-links">
-    <a href="#project">Project</a>
-    <a href="#development">Development</a>
-    <a href="#evidence">Evidence</a>
-    <a href="#about">About</a>
-  </div>
-</nav>
+<div class="logo">SILICO <span>GUARD</span></div>
 
+<div>
 
-<!-- HERO -->
+<a href="#project">Project</a>
 
-<header class="hero">
+<a href="#design">Design</a>
 
-  <div class="hero-content">
+<a href="#files">Evidence</a>
 
-    <div class="tag">
-      OCCUPATIONAL HEALTH & SAFETY • FIRE SAFETY INNOVATION
-    </div>
-
-    <h1>
-      Silico <span>Guard</span>
-    </h1>
-
-    <p class="hero-subtitle">
-      A fire safety innovation project exploring silicone-based fire blanket concepts
-      for practical fire response and personal protection.
-    </p>
-
-    <div class="hero-buttons">
-
-      <a class="btn btn-primary" href="سيلكو%20جارد.pdf">
-        View Project PDF
-      </a>
-
-      <a class="btn btn-outline" href="‎⁨٢محاكاة⁩.mov">
-        Watch Demonstration
-      </a>
-
-    </div>
-
-  </div>
-
-</header>
-
-
-<!-- STATS -->
-
-<div class="stats">
-
-  <div class="stat">
-    <strong>02</strong>
-    <span>Fire Safety Concepts</span>
-  </div>
-
-  <div class="stat">
-    <strong>3D</strong>
-    <span>Blender Design</span>
-  </div>
-
-  <div class="stat">
-    <strong>01</strong>
-    <span>Physical Prototype</span>
-  </div>
-
-  <div class="stat">
-    <strong>2025</strong>
-    <span>Project Recognition</span>
-  </div>
+<a href="#about">About</a>
 
 </div>
 
+</nav>
 
-<!-- PROJECT -->
+<header class="hero">
+
+<div class="hero-content">
+
+<div class="tag">
+
+OCCUPATIONAL HEALTH & SAFETY • FIRE SAFETY INNOVATION
+
+</div>
+
+<h1>Silico <span>Guard</span></h1>
+
+<p>
+
+A fire safety innovation project exploring silicone-based fire blanket concepts
+
+for practical fire response and personal protection.
+
+</p>
+
+<a class="btn primary" href="سيلكو%20جارد.pdf">
+
+VIEW PROJECT
+
+</a>
+
+<a class="btn secondary" href="‎⁨٢محاكاة⁩.mov">
+
+WATCH DEMONSTRATION
+
+</a>
+
+</div>
+
+</header>
+
+<div class="stats">
+
+<div class="stat">
+
+<strong>02</strong>
+
+<span>Fire Safety Concepts</span>
+
+</div>
+
+<div class="stat">
+
+<strong>3D</strong>
+
+<span>Blender Design</span>
+
+</div>
+
+<div class="stat">
+
+<strong>01</strong>
+
+<span>Physical Prototype</span>
+
+</div>
+
+<div class="stat">
+
+<strong>2025</strong>
+
+<span>Project Recognition</span>
+
+</div>
+
+</div>
 
 <section id="project">
 
-  <div class="section-header">
+<div class="title">
 
-    <div class="eyebrow">The Project</div>
+<div class="label">THE PROJECT</div>
 
-    <h2>
-      Designing a practical approach to fire safety.
-    </h2>
+<h2>Designing a practical approach to fire safety.</h2>
 
-    <p>
-      Silico Guard explores silicone-based fire blanket concepts designed
-      around fire response, protection and practical usability.
-    </p>
+<p>
 
-  </div>
+Silico Guard explores silicone-based fire blanket concepts designed around
 
+fire response, protection and practical usability.
 
-  <div class="project-grid">
+</p>
 
-    <div class="project-card">
+</div>
 
-      <div class="card-top"></div>
+<div class="cards">
 
-      <div class="card-body">
+<div class="card">
 
-        <div class="number">PROTOTYPE 01</div>
+<div class="label">PROTOTYPE 01</div>
 
-        <h3>Silicone Fire Blanket</h3>
+<h3>Silicone Fire Blanket</h3>
 
-        <p>
-          A flexible silicone-based blanket concept designed to help isolate
-          a fire from oxygen and provide an additional fire-response option.
-        </p>
+<p>
 
-      </div>
+A flexible silicone-based blanket concept designed to help isolate a fire
 
-    </div>
+from oxygen and provide an additional fire-response option.
 
+</p>
 
-    <div class="project-card">
+</div>
 
-      <div class="card-top"></div>
+<div class="card">
 
-      <div class="card-body">
+<div class="label">PROTOTYPE 02</div>
 
-        <div class="number">PROTOTYPE 02</div>
+<h3>Cooling Gel Blanket</h3>
 
-        <h3>Cooling Gel Blanket</h3>
+<p>
 
-        <p>
-          A second concept combining the blanket design with a cooling gel
-          layer intended to reduce heat sensation and support personal protection.
-        </p>
+A second concept combining the blanket design with a cooling gel layer
 
-      </div>
+intended to reduce heat sensation and support personal protection.
 
-    </div>
+</p>
 
-  </div>
+</div>
+
+</div>
 
 </section>
 
+<section id="design" class="development">
 
-<!-- DEVELOPMENT -->
+<div class="title">
 
-<section id="development" class="development">
+<div class="label">DESIGN & DEVELOPMENT</div>
 
-  <div class="section-header">
+<h2>From concept to physical prototype.</h2>
 
-    <div class="eyebrow">Design & Development</div>
+<p>
 
-    <h2>
-      From concept to physical prototype.
-    </h2>
+The project combined safety-focused thinking, 3D modelling and practical
 
-    <p>
-      The project combined safety-focused thinking, 3D modelling and practical
-      demonstration to develop and present the Silico Guard concepts.
-    </p>
+demonstration.
 
-  </div>
+</p>
 
+</div>
 
-  <div class="steps">
+<div class="steps">
 
-    <div class="step">
+<div class="step">
 
-      <div class="step-number">01</div>
+<div class="step-number">01</div>
 
-      <h3>Concept</h3>
+<h3>Concept</h3>
 
-      <p>
-        Identifying a fire safety concept based on fire isolation and
-        practical emergency response.
-      </p>
+<p>Developing the fire safety concept around fire isolation and practical response.</p>
 
-    </div>
+</div>
 
+<div class="step">
 
-    <div class="step">
+<div class="step-number">02</div>
 
-      <div class="step-number">02</div>
+<h3>3D Design</h3>
 
-      <h3>3D Design</h3>
+<p>Creating product concepts and visual models using Blender.</p>
 
-      <p>
-        Creating the product concepts and visual representations using
-        Blender 3D modelling.
-      </p>
+</div>
 
-    </div>
+<div class="step">
 
+<div class="step-number">03</div>
 
-    <div class="step">
+<h3>Prototype</h3>
 
-      <div class="step-number">03</div>
+<p>Developing physical prototypes and conducting a practical demonstration.</p>
 
-      <h3>Prototype & Demonstration</h3>
+</div>
 
-      <p>
-        Developing physical prototypes and conducting a practical
-        demonstration of the fire blanket concept.
-      </p>
-
-    </div>
-
-  </div>
+</div>
 
 </section>
 
+<section id="files">
 
-<!-- EVIDENCE -->
+<div class="title">
 
-<section id="evidence">
+<div class="label">PROJECT EVIDENCE</div>
 
-  <div class="section-header">
+<h2>Explore the project documentation.</h2>
 
-    <div class="eyebrow">Project Evidence</div>
+<p>
 
-    <h2>
-      Explore the project documentation.
-    </h2>
+Supporting materials documenting the project, visuals and practical work.
 
-    <p>
-      Supporting materials documenting the project concept, design and
-      practical demonstration.
-    </p>
+</p>
 
-  </div>
+</div>
 
+<div class="files">
 
-  <div class="evidence-grid">
+<a class="file" href="سيلكو%20جارد.pdf">
 
+<div class="file-icon">📄</div>
 
-    <a class="evidence" href="سيلكو%20جارد.pdf">
+<h3>Project Documentation</h3>
 
-      <div>
+<p>Full Silico Guard project documentation.</p>
 
-        <div class="icon">📄</div>
+<strong>OPEN DOCUMENT →</strong>
 
-        <h3>Project Documentation</h3>
+</a>
 
-        <p>
-          Full Silico Guard project documentation and concept details.
-        </p>
+<a class="file" href="صور%20محررة.pdf">
 
-      </div>
+<div class="file-icon">▣</div>
 
-      <div class="evidence-link">
-        OPEN DOCUMENT →
-      </div>
+<h3>Project Visuals</h3>
 
-    </a>
+<p>Selected project images and visual material.</p>
 
+<strong>VIEW FILE →</strong>
 
-    <a class="evidence" href="صور%20محررة.pdf">
+</a>
 
-      <div>
+<a class="file" href="‎⁨ملاحظة%20جديدة⁩%202.pdf">
 
-        <div class="icon">◫</div>
+<div class="file-icon">✦</div>
 
-        <h3>Project Visuals</h3>
+<h3>Additional Documentation</h3>
 
-        <p>
-          Selected visual material and edited project images.
-        </p>
+<p>Additional project notes and supporting material.</p>
 
-      </div>
+<strong>OPEN FILE →</strong>
 
-      <div class="evidence-link">
-        VIEW FILE →
-      </div>
+</a>
 
-    </a>
-
-
-    <a class="evidence" href="‎⁨ملاحظة%20جديدة⁩%202.pdf">
-
-      <div>
-
-        <div class="icon">✦</div>
-
-        <h3>Additional Documentation</h3>
-
-        <p>
-          Additional project notes and supporting material.
-        </p>
-
-      </div>
-
-      <div class="evidence-link">
-        OPEN FILE →
-      </div>
-
-    </a>
-
-
-  </div>
+</div>
 
 </section>
-
-
-<!-- SAFETY -->
 
 <section class="safety">
 
-  <div class="section-header">
+<div class="title">
 
-    <div class="eyebrow">Safety During Demonstration</div>
+<div class="label">SAFETY DURING DEMONSTRATION</div>
 
-    <h2>
-      Safety remained a priority during practical testing.
-    </h2>
+<h2>Safety remained a priority during practical testing.</h2>
 
-  </div>
+</div>
 
+<div class="safety-box">
 
-  <div class="safety-box">
+<strong>Practical Demonstration Safety Measures</strong>
 
-    <h3>Practical Demonstration Safety Measures</h3>
+<p>
 
-    <p>
-      A formal, documented risk assessment was not conducted for this project.
-      However, safety precautions were taken during the practical demonstration,
-      including having a fire extinguisher on standby along with other
-      precautionary and backup measures in place to respond to an emergency
-      during the demonstration.
-    </p>
+A formal, documented risk assessment was not conducted for this project.
 
-  </div>
+However, safety precautions were taken during the practical demonstration,
+
+including having a fire extinguisher on standby along with other precautionary
+
+and backup measures in place to respond to an emergency during the test.
+
+</p>
+
+</div>
 
 </section>
-
-
-<!-- AWARD -->
 
 <section class="award">
 
-  <div class="section-header">
+<div class="label">RECOGNITION</div>
 
-    <div class="eyebrow">Recognition</div>
+<h2>Outstanding Project Award</h2>
 
-    <h2>
-      Outstanding Project Award
-    </h2>
+<p>
 
-    <p>
-      Silico Guard received recognition at the Qasim Region Technical and
-      Vocational Training Excellence Award in 2025.
-    </p>
+Silico Guard received recognition at the Qasim Region Technical and Vocational
 
-  </div>
+Training Excellence Award in 2025.
 
-  <div class="award-badge">
-    SILICO GUARD • 2025
-  </div>
+</p>
+
+<div class="badge">
+
+SILICO GUARD • 2025
+
+</div>
 
 </section>
-
-
-<!-- ABOUT -->
 
 <section id="about">
 
-  <div class="about-grid">
+<div class="about">
 
-    <div class="section-header">
+<div>
 
-      <div class="eyebrow">About the Author</div>
+<div class="label">ABOUT THE AUTHOR</div>
 
-      <h2>
-        Nora Alshalahi
-      </h2>
+<h2>Nora Alshalahi</h2>
 
-      <p>
-        Occupational Health & Safety professional with practical experience
-        in workplace safety inspections, hazard identification, emergency
-        planning and safety documentation.
-      </p>
+<p>
 
-      <p style="margin-top:18px;">
-        My focus is on preventive safety, practical hazard awareness and
-        developing clear safety solutions that support safer workplaces.
-      </p>
+Occupational Health & Safety professional with practical experience in
 
-    </div>
+workplace safety inspections, hazard identification, emergency planning
 
+and safety documentation.
 
-    <div class="about-card">
+</p>
 
-      <h3>Professional Profile</h3>
+<br>
 
-      <p>
-        Diploma in Occupational Health & Safety with professional training
-        and certifications in occupational safety and emergency response.
-      </p>
+<p>
 
+My focus is on preventive safety, practical hazard awareness and developing
 
-      <div class="credentials">
+clear safety solutions that support safer workplaces.
 
-        <span class="credential">OSHA 30H</span>
+</p>
 
-        <span class="credential">IOSH Managing Safely</span>
+</div>
 
-        <span class="credential">CIEH Level 3</span>
+<div class="about-box">
 
-        <span class="credential">HAZWOPER</span>
+<h2>Professional Profile</h2>
 
-        <span class="credential">First Aid</span>
+<p>
 
-        <span class="credential">Risk Management 30H</span>
+Diploma in Occupational Health & Safety with professional training and
 
-        <span class="credential">Safety Cadres</span>
+certifications in occupational safety and emergency response.
 
-        <span class="credential">SCE Technical Membership</span>
+</p>
 
-      </div>
+<div class="tags">
 
-    </div>
+<span>OSHA 30H</span>
 
-  </div>
+<span>IOSH</span>
+
+<span>CIEH Level 3</span>
+
+<span>HAZWOPER</span>
+
+<span>First Aid</span>
+
+<span>Risk Management 30H</span>
+
+<span>Safety Cadres</span>
+
+<span>SCE Membership</span>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
-
-<!-- FOOTER -->
-
 <footer>
 
-  <div>
-    © 2025 Silico Guard — Fire Safety Innovation
-  </div>
+<div>
 
-  <div>
-    <a href="mailto:nora.osh.9@gmail.com">
-      nora.osh.9@gmail.com
-    </a>
-  </div>
+© 2025 Silico Guard — Fire Safety Innovation
+
+</div>
+
+<div>
+
+<a href="mailto:nora.osh.9@gmail.com">
+
+nora.osh.9@gmail.com
+
+</a>
+
+</div>
 
 </footer>
 
-
 </body>
+
 </html>
